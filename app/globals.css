@@ -1,13 +1,34 @@
 @import "tailwindcss";
 
 :root {
+  /* DMS Brand Colors */
+  --dms-primary: #214892;
+  --dms-primary-hover: #1863dc;
+  --dms-white: #ffffff;
+  --dms-text-dark: #212121;
+  --dms-gray: #d0d5d2;
+  --dms-light-gray: #f4f4f4;
+  
+  /* Theme Variables */
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #212121;
+  --primary: #214892;
+  --primary-hover: #1863dc;
+  --secondary: #d0d5d2;
+  --accent: #1863dc;
+  --muted: #f4f4f4;
+  --muted-foreground: #212121;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -15,7 +36,13 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #ffffff;
+    --primary: #1863dc;
+    --primary-hover: #214892;
+    --secondary: #d0d5d2;
+    --accent: #1863dc;
+    --muted: #171717;
+    --muted-foreground: #d0d5d2;
   }
 }
 
