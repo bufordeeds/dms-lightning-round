@@ -6,11 +6,11 @@ const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
 const supabase = createClient(supabaseUrl, supabaseServiceKey);
 
-// Session dates (Fridays)
+// Session dates (Fridays)  
 const sessionDates = {
-  'Childhood Toy': '2024-07-18', // Oldest
+  'Movie': '2024-07-18', // Oldest (first session)
   'Anywhere in the World': '2024-07-25', // Middle  
-  'Movie': '2024-08-01' // Most recent
+  'Childhood Toy': '2024-08-01' // Most recent
 };
 
 async function updateSessionDates() {
