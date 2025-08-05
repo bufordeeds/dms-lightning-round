@@ -1,5 +1,4 @@
 import { supabase } from './supabase';
-import { Employee, Session, Answer } from './types/database';
 
 export const employeeDb = {
   async getAll() {

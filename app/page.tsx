@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { employeeDb, sessionDb } from '@/lib/db';
-import { Employee, Session } from '@/lib/types/database';
+import { Session } from '@/lib/types/database';
 
 export default function Home() {
   const [employeeCount, setEmployeeCount] = useState(0);
@@ -37,7 +37,7 @@ export default function Home() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-gray-900">Lightning Round Q&A Manager</h1>
-          <p className="mt-2 text-lg text-gray-600">Track and manage your team's lightning round sessions</p>
+          <p className="mt-2 text-lg text-gray-600">Track and manage your team&apos;s lightning round sessions</p>
         </div>
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-8">
